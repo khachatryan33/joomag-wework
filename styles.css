@@ -1,0 +1,179 @@
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url(./assets/fonts/ProximaNova-Bold.otf);
+}
+@font-face {
+  font-family: Proxima Nova Regular;
+  src: url(./assets/fonts/ProximaNova-Regular.otf);
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Proxima Nova Regular;
+}
+.title {
+  font-family: Proxima Nova Bold;
+  color: #000;
+  font-size: 24px;
+  line-height: 1.2;
+}
+#main-section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  background: linear-gradient(45deg, rgba(92, 71, 137, 0.89819678) 74%, rgba(41, 17, 109, 0.35758053) 100%);
+}
+@media (max-width: 320px) {
+  #main-section .pre-title {
+    background-image: url('./assets/images/joomag-love-wework-mobile.svg');
+  }
+}
+@media (min-width: 320px) {
+  #main-section .pre-title {
+    background-image: url('./assets/images/joomag-love-wework.svg');
+  }
+}
+#main-section .pre-title {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 50px;
+}
+#main-section .title {
+  color: #fff;
+  text-align: center;
+}
+#main-section .text {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 35px;
+}
+#trusted-by-section {
+  background: #fff;
+  padding-top: 100px;
+}
+#trusted-by-section .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#trusted-by-section .logos > div {
+  text-align: center;
+}
+#trusted-by-section img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+.wework-offer {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url('./assets/images/image-we-work.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.wework-offer.footer {
+  background: linear-gradient(45deg, rgba(92, 71, 137, 0.89819678) 74%, rgba(41, 17, 109, 0.35758053) 100%);
+}
+.wework-offer .sub-title {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.2;
+}
+.wework-offer .title {
+  color: #fff;
+  text-align: center;
+}
+.wework-offer .text {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.wework-offer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsla(256, 73%, 25%, 0.9);
+}
+.wework-offer .wave {
+  position: absolute;
+  width: 110%;
+  height: 100px;
+  background: #fff;
+  transform: rotate(-3deg);
+  left: -5%;
+}
+.wework-offer .wave.top {
+  top: -60px;
+}
+.wework-offer .wave.bottom {
+  bottom: -60px;
+}
+.wework-offer .controls {
+  text-align: center;
+}
+.wework-offer .controls > div {
+  padding: 0;
+}
+.wework-offer .controls input {
+  outline: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  text-indent: 15px;
+  font-size: 12px;
+  height: 35px;
+  width: 100%;
+  border: none;
+  margin-bottom: 30px;
+}
+.wework-offer .controls input::placeholder {
+  font-size: 12px;
+  color: #c1c1c1;
+}
+.wework-offer .controls button {
+  background-color: #4286f4;
+  color: #fff;
+  font-size: 12px;
+  border: 0;
+  height: 35px;
+  width: 100%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  outline: none;
+  margin-bottom: 30px;
+}
+#features {
+  padding-top: 30px;
+}
+#features .feature-item {
+  margin-bottom: 80px;
+}
+@media (min-width: 576px) {
+  #features .feature-item.image-right-side > div:nth-child(1) {
+    order: 2;
+  }
+  #features .feature-item.image-right-side > div:nth-child(2) {
+    order: 1;
+  }
+}
+#features .feature-item > div:first-child {
+  margin-bottom: 30px;
+}
+#features .feature-item .text {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
